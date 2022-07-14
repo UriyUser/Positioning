@@ -1,0 +1,33 @@
+body {
+    background: #ccc;
+}
+
+#video,
+#foto {
+    position: relative;
+}
+
+#foto {
+    top: -410px;
+    left: 500px;
+}
+
+.foto {
+    position: absolute;
+    width: 100px;
+    opacity: 0;
+    animation: anim 70s ease;
+}
+
+@keyframes anim {
+    0% {
+        transform: translate(300px, -300px);
+        opacity: o;
+    }
+
+    100% {
+        transform: translate(-50px, 10px);
+        opacity: 1;
+    }
+
+}
